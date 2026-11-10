@@ -729,11 +729,17 @@ CLAUDE_BEDROCK_VERTEX_CASES = [
     ("us.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
     ("eu.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
     ("apac.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
+    ("jp.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
+    ("au.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
     ("global.anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
     # Bedrock — no CRIS prefix
     ("anthropic.claude-haiku-4-5-20251001-v1:0", "claude-haiku-4-5"),
     ("us.anthropic.claude-sonnet-4-5-20250929-v1:0", "claude-sonnet-4-5"),
+    ("jp.anthropic.claude-sonnet-4-5-20250929-v1:0", "claude-sonnet-4-5"),
+    ("au.anthropic.claude-sonnet-4-5-20250929-v1:0", "claude-sonnet-4-5"),
     ("us.anthropic.claude-opus-4-5-20251101-v1:0", "claude-opus-4-5"),
+    ("jp.anthropic.claude-opus-4-8-20260601-v1:0", "claude-opus-4-8"),
+    ("au.anthropic.claude-opus-4-8-20260601-v1:0", "claude-opus-4-8"),
     # Sonnet 5 — plain, Bedrock (CRIS + bare), Vertex (@date)
     ("claude-sonnet-5", "claude-sonnet-5"),
     ("anthropic/claude-sonnet-5", "claude-sonnet-5"),
