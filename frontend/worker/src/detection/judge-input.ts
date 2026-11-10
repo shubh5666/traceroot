@@ -387,9 +387,14 @@ export function sampleLines(text: string, budget: number): string {
   if (body.length === 0) return numbered.join("\n").slice(0, budget);
 
   const sample = (target: number) => {
-    const step = body.length / target;
     const kept: string[] = [];
-    for (let i = 0; i < target; i++) kept.push(body[Math.floor(i * step)]);
+    if (target === 1) {
+      kept.push(body[body.length - 1]);
+    } else {
+      for (let i = 0; i < target; i++) {
+        kept.push(body[Math.round((i * (body.length - 1)) / (target - 1))]);
+      }
+    }
     return [...head, note((kept.length / body.length) * 100), ...kept].join("\n");
   };
   const fixed = head.join("\n").length + note(100).length + 2;
